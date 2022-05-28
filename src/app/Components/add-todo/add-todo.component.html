@@ -1,0 +1,18 @@
+<div class="my-3">
+    <h4>Add Todo</h4>
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" [(ngModel)]="title" id="title" name="title" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="desc" class="form-label">Description</label>
+            <input type="text" class="form-control" [(ngModel)]="desc" id="desc" name="desc">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" [(ngModel)]="active" id="active" name="active">
+            <label class="form-check-label" for="active">Active</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Todo</button>
+    </form>
+</div>
